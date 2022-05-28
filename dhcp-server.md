@@ -6,12 +6,15 @@
 
 ### Задание 1.
 Установил DHCP-сервер.
+
     sudo apt install isc-dhcp-server
 
 Резервная копия базовой конфигурации. 
+
     sudo mv /etc/dhcp/dhcpd.conf{,.backup}
 
 Создал новую конфигурацию.
+
     sudo nano /etc/dhcp/dhcpd.conf
 
     default-lease-time 600;
@@ -62,6 +65,7 @@
     sudo ip -6 addr add fdbb:2b76:2b78:9e66::1  dev tap0
 
 По логам отлаживал фейлы старта (из - за опечаток в конфигурации)
+
     sudo systemctl restart radvd
     sudo systemctl status radvd
 
