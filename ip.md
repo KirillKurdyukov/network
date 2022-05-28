@@ -34,7 +34,7 @@
     ip neigh show 
     10.75.55.240 dev tap0 lladdr 02:f5:b0:c6:06:31 STALE
 
-Задание 3. 
+### Задание 3. 
 Сначала не хватало почему - то прав. Чтобы установить IPv6 адрес.
     sudo ip -6 address add fd33:4f18:dc07:232b:111f:3241:895a:0f85/64 dev tap0
     RTNETLINK answers: Permission denied
@@ -56,7 +56,7 @@
     64 bytes from fd33:4f18:dc07:232b:111f:3241:895a:b336: icmp_seq=3 ttl=64 time=5.90 ms
     64 bytes from fd33:4f18:dc07:232b:111f:3241:895a:b336: icmp_seq=4 ttl=64 time=5.97 ms
 
-Задание 4. 
+### Задание 4. 
     ip  neigh show
     10.75.55.240 dev tap0 lladdr 02:f5:b0:c6:06:31 STALE
     192.168.0.1 dev wlp0s20f3 lladdr d8:47:32:94:3b:f7 REACHABLE
@@ -64,7 +64,7 @@
     fe80::f7:a9ff:fe63:a90d dev tap0 lladdr 02:f7:a9:63:a9:0d router STALE
     fd33:4f18:dc07:232b:111f:3241:895a:b336 dev tap0 lladdr 02:f7:a9:63:a9:0d router STALE
 
-Задание 5. 
+### Задание 5. 
 
     ping --help
     -s <size> use <size> as number of data bytes to be sent
