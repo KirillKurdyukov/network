@@ -30,7 +30,8 @@
     64 bytes from 10.75.55.127: icmp_seq=3 ttl=65 time=0.049 ms
     64 bytes from 10.75.55.127: icmp_seq=4 ttl=65 time=0.041 ms
 
-### Задание 2. Узнал в таблице ARP.
+### Задание 2. 
+Узнал в таблице ARP.
     ip neigh show 
     10.75.55.240 dev tap0 lladdr 02:f5:b0:c6:06:31 STALE
 
